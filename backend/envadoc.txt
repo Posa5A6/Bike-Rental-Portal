@@ -1,0 +1,90 @@
+### **Setting Up & Activating a Virtual Environment in Windows (VS Code)**
+Follow these steps to create and activate a virtual environment in **VS Code** on **Windows**:
+
+---
+
+### **1️⃣ Open VS Code and Your Project Folder**
+- Open **VS Code**.
+- Click on **File > Open Folder** and select your project folder.
+
+---
+
+### **2️⃣ Open the Terminal in VS Code**
+- Press **`Ctrl + ~`** (tilde key) to open the terminal.
+- Make sure you're in your project directory:
+  ```sh
+  cd path\to\your\project
+  ```
+
+---
+
+### **3️⃣ Create a Virtual Environment**
+Run the following command to create a **virtual environment** named `venv`:
+```sh
+python -m venv venv
+```
+
+---
+
+### **4️⃣ Activate the Virtual Environment**
+Now, activate the virtual environment:
+
+✅ **For Windows (Command Prompt in VS Code):**
+```sh
+venv\Scripts\activate
+```
+
+✅ **For Windows (PowerShell in VS Code):**
+```sh
+venv\Scripts\Activate.ps1
+```
+⚠️ If you get an error saying _"execution policy prevents running scripts"_, run this command in PowerShell:
+```sh
+Set-ExecutionPolicy Unrestricted -Scope Process
+```
+Then, try activating it again.
+
+---
+
+### **5️⃣ Confirm Virtual Environment Activation**
+Once activated, your terminal should show `(venv)` before the command prompt:
+```
+(venv) C:\path\to\your\project>
+```
+
+---
+
+### **6️⃣ Install Required Libraries**
+After activating the virtual environment, install the necessary dependencies:
+```sh
+pip install flask flask_pymongo flask_cors
+```
+To install from a `requirements.txt` file (if available):
+```sh
+pip install -r requirements.txt
+```
+
+---
+
+### **7️⃣ Run Your Flask App**
+Run your Flask app inside the virtual environment:
+```sh
+python app.py
+```
+or
+```sh
+flask run
+```
+
+---
+
+### **8️⃣ Deactivate the Virtual Environment**
+When you're done, deactivate it with:
+```sh
+deactivate
+```
+
+---
+
+🚀 **Now, your Flask project is running in a virtual environment inside VS Code!** 🚀  
+Let me know if you need any help! 😊
