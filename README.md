@@ -1,7 +1,7 @@
 
 ---
 
-# **Bike Rental Portal 🚲**
+# **Bike Rental Portal 🏍️**
 
 ## **Overview**
 
