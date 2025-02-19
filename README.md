@@ -1,4 +1,3 @@
-Here’s an extended version of your **Bike Rental Portal** documentation with more details on features, setup, deployment, security, and contributions.
 
 ---
 
